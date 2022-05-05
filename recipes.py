@@ -12,7 +12,7 @@ def logger_path(path):
             with open (path, 'a') as f: 
                 log = csv.writer(f, delimiter=',')
                 log.writerow(full_list)
-            return full_list
+            return  old_funktion(*args, **kwargs)
         return new_funktion
     return logger
 
